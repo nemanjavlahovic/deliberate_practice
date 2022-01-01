@@ -7,5 +7,5 @@
 - Rerun terminal and run `sudo gem install ffi`
 - Pod install should work now
 
-Why FFI? 
+What is FFI? 
 - Ruby-FFI is a gem for programmatically loading dynamically-linked native libraries, binding functions within them, and calling those functions from Ruby code.
