@@ -15,3 +15,13 @@ The only way to change a background color of NSView is by doing
 - Cocoa is extremely focused on object-oriented programming, so the only way to adjust a setting a lot of the times is to create a subclass.
 - Weirdly enough, paralell for UILabel is NSTextField.
 - The Y axis starts at the bottom of the screen in macOS, whereas it's the top of the screen in iOS.
+
+
+## Window Management
+
+- In case you want to close the app when the close button is tapped on window, you should add this AppDelegate method
+```
+   func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
+        return true
+    }
+```
