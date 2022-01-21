@@ -2,9 +2,9 @@
 
 - As a conesequence of the differences in the view system, animations also work quite differently on the Mac. If your views are not layer-backed, then naturally, animations will be a CPU-intensive process, as every step of the animation has to be drawn accordingly in the window-backing store. 
 - There are a few different ways you can trigger an animation on a view. First, you can use the animator proxy:
-- ```
-- view.animator.alphaValue = 0.5
-- ```
+ ```
+view.animator.alphaValue = 0.5
+ ```
 - Behind the scenes, this will enable implicit animations on the backing layer, set the alpha value, and disable the implicit animations again. 
 - You can also wrap this into an animation context in order to get a completion handler callback:
 ```
