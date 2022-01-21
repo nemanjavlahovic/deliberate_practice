@@ -17,7 +17,8 @@ The only way to change a background color of NSView is by doing
 - The Y axis starts at the bottom of the screen in macOS, whereas it's the top of the screen in iOS.
 
 
-## Window Management
+
+## Windows and Window Controllers
 
 - In case you want to close the app when the close button is tapped on window, you should add this AppDelegate method
 ```
@@ -25,3 +26,6 @@ The only way to change a background color of NSView is by doing
         return true
     }
 ```
+- Historically, Mac applications had multiple windows, each with its own role, very similar to view controllers on iOS. As a result, AppKit has an NSWindowController class that traditionally took many of the tasks that you would handle in a view controller on iOS.
+- As of OS X 10.10, the NSViewController class is similar in many ways to UIViewController, and part of the responder chain by default.
+- NSWindow is not a view subclass as is the case for UIWindow.
