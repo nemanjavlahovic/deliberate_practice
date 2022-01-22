@@ -14,3 +14,9 @@ Why: The workplace may be challenging, but it should never be threatening. A man
 Why: A supportive manager cares about your goals, not gluing you to your seat. The very best managers realize when it's time to move you up.
 
 - What people in the organisation do besides work?
+
+- How is performance measured?
+
+- What is the on-boarding experience like and how will I be supported?
+
+- What is the most challenging part about this role?
