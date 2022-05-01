@@ -20,3 +20,6 @@ guard let variable = variable else {
   return 
 }
 ```
+
+### Boundaries
+- Reduce the amount of third-party calls by having a very few places in the code that refer to them. Wrap them into a class and make all calls from a single place.
