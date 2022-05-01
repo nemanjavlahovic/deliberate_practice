@@ -8,3 +8,15 @@
 - The ideal number of arguments for a function is zero (niladic). Next comes one (monadic), followed closely by two (dyadic). Three arguments (triadic) should be avoided where possible. More than three (polyadic) requires very special justification and they should not be used.
 - Flag arguments are ugly. Passing a boolean into a function is a bad practice and it immediately complicates the signature of the method, loudly proclaiming that this function does more than one thing. It does one if the flag is true and another if the flag is false.
 -  Extract try/catch blocks into functions of their own.
+
+### Formatting
+- If one function calls another, they should be vertically close and the caller should be above the callee, if possible.
+- In general we want function call dependencies to point in the downward direction. That is, a function that is called should be below a function that does the calling. This creates a nice flow down the source code module from high level to low level.
+
+## Breaking Indentation
+- It is sometimes tempting to break the indentation rule for short if, guard statements, but you should prefer to expand and indent the scopes instead, preferably like this:
+```
+guard let variable = variable else {
+  return 
+}
+```
